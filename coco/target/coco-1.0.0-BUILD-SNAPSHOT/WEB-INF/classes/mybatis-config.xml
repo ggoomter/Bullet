@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
  	<typeAliases>
-		<typeAlias alias="User" type="yjc.wdb.domain.user" />
+		<typeAlias alias="Member" type="yjc.wdb.domain.Member" />
 		<typeAlias alias="bbs" type="yjc.wdb.domain.bbs" />
 	</typeAliases>
 </configuration>

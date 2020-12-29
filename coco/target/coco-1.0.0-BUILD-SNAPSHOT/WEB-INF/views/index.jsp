@@ -36,12 +36,12 @@
                 <div class="ui stacked segment">
                     <div class="field">
                         <div class="ui left icon input">
-                            <input type="text" id="u_id" placeholder="아이디">
+                            <input type="text" id="ID" placeholder="아이디">
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui left icon input">
-                            <input type="password" id="u_pw" placeholder="비밀번호">
+                            <input type="password" id="PW" placeholder="비밀번호">
                         </div>
                     </div>
                     <div class="ui fluid large teal submit button" id = "login_btn">로그인</div>
@@ -63,8 +63,8 @@
 	    $(document).ready(function(){
 			$("#login_btn").click(function(){
 				var json = {
-					u_id : $("#u_id").val(),
-					u_pw : $("#u_pw").val()
+					ID : $("#ID").val(),
+					PW : $("#PW").val()
 				};
 				
 				for(var str in json){

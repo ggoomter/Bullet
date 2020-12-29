@@ -5,7 +5,7 @@
 <mapper namespace="memberMapper">
 
 
- <!-- org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'ID' in 'class yjc.wdb.domain.Member' 는 대소문자가 달라서 발생했음 -->
+ <!-- org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'ID' in 'class yjc.wdb.domain.Member' MAPPER의 #{}안의 대소문자와 DTO(VO)의 대소문자가 달라서 그럴확률이 90% -->
 	<select id="Id_Check" resultType="int">
 		select count(*) from MEMBER U
 		where U.ID = #{id}

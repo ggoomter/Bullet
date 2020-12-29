@@ -39,17 +39,17 @@
                 <div class="ui stacked segment">
                     <div class="field">
                         <div class="ui left icon input">
-                            <input type="text" id="u_id" placeholder="아이디" autofocus autocomplete="off">
+                            <input type="text" id="id" placeholder="아이디" autofocus autocomplete="off">
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui left icon input">
-                            <input type="password" id="u_pw" placeholder="비밀번호">
+                            <input type="password" id="pw" placeholder="비밀번호">
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui left icon input">
-                            <input type="password" id="u_pw2" placeholder="비밀번호 확인">
+                            <input type="password" id="pw_confirm" placeholder="비밀번호 확인">
                         </div>
                     </div>
                     <button class="ui fluid large teal submit button" id="register_btn">회원가입</button>
@@ -71,9 +71,9 @@
         $(document).ready(function() {
             $("#register_btn").click(function() {
                 var json = {
-                    u_id: $("#u_id").val(),
-                    u_pw: $("#u_pw").val(),
-                    u_pw2: $("#u_pw2").val()
+                    id: $("#id").val(),
+                    pw: $("#pw").val(),
+                    pw_confirm: $("#pw_confirm").val()
                 };
 
                 for (var str in json) {

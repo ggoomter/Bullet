@@ -3,4 +3,3 @@ yjc\wdb\domain\bbs.class
 yjc\wdb\persistence\member_dao.class
 yjc\wdb\coco\HomeController.class
 yjc\wdb\coco\HomeController$JsonpAdviceController.class
-yjc\wdb\domain\user.class
